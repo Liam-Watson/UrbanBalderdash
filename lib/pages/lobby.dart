@@ -20,28 +20,33 @@ class _LobbyState extends State<Lobby> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.yellow,
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
         title: Text(
             lby.getName(),
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontWeight: FontWeight.bold
           ),
         ),
       ),
       body: Container(
-        color: Colors.blueGrey,
+        color: Colors.yellow,
         child: Center(
           child: RaisedButton(
-            elevation: 40,
+            elevation: 100,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(90)
+              borderRadius: BorderRadius.circular(80)
             ),
-            color: Colors.grey,
+            color: Colors.blue,
             child: Text(
               "Play",
+
               style: TextStyle(
-                fontSize: 140
+                fontSize: 120,
+                color: Colors.white
               ),
             ),
             onPressed: (){

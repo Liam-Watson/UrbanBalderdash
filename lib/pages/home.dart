@@ -12,7 +12,7 @@ class HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.blueGrey,
+        color: Colors.yellow,
         child: Center(
           child: Column(
             children: <Widget>[
@@ -22,11 +22,11 @@ class HomeState extends State<Home> {
                   minWidth: 300,
                   height: 150,
                   child: RaisedButton(
-                    color: Colors.grey,
+                    color: Colors.blue,
                     elevation: 20,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50.0),
-                      side: BorderSide(color: Colors.blueGrey),
+                      side: BorderSide(color: Colors.blue),
                     ),
                     onPressed: () {
                       Navigator.pushNamed(context, "/joinLobby");
@@ -43,12 +43,12 @@ class HomeState extends State<Home> {
               ),
               Container(
                 padding: EdgeInsets.all(40),
-                color: Colors.blueGrey,
+                color: Colors.yellow,
                 child: ButtonTheme(
                   minWidth: 300,
                   height: 150,
                   child: RaisedButton(
-                    color: Colors.grey,
+                    color: Colors.blue[700],
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50.0),
                       side: BorderSide(color: Colors.blueGrey),
@@ -71,11 +71,11 @@ class HomeState extends State<Home> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
         onPressed: (){
           Navigator.pushReplacementNamed(context, "/login");
         },
-        child: Text("back"),
+        child: Text("back", style: TextStyle(color: Colors.black),),
       ),
     );
   }

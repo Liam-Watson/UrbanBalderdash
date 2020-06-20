@@ -23,18 +23,18 @@ class Login extends State<LoginWid> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blue,
         title: Text("Login"),
       ),
       body: Container(
-        color: Colors.blueGrey,
+        color: Colors.white,
         padding: EdgeInsets.symmetric(horizontal: 50, vertical: 0),
         child: Column(
           children: <Widget>[
             Image.asset(
               "assets/Logo.GIF",
               colorBlendMode: BlendMode.multiply,
-              color: Colors.blueGrey,
+              color: Colors.white,
             ),
             Container(
               padding: EdgeInsets.fromLTRB(30, 30, 0, 10),
@@ -109,7 +109,7 @@ class Login extends State<LoginWid> {
             Container(
               child: RaisedButton(
                   child: Text("Submit"),
-                  color: Colors.grey,
+                  color: Colors.yellow,
                   elevation: 20,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50),

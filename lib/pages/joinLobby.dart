@@ -14,12 +14,15 @@ class _JoinLobbyState extends State<JoinLobby> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
+        backgroundColor: Colors.yellow,
       ),
         body: Center(
           child: Container(
             padding: EdgeInsets.all(50),
-            color: Colors.blueGrey,
+            color: Colors.yellow,
             child: Column(
               children: <Widget>[
                 Container(
@@ -64,7 +67,7 @@ class _JoinLobbyState extends State<JoinLobby> {
                     clipBehavior: Clip.antiAlias,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(70.0),
-                      side: BorderSide(color: Colors.blueGrey),
+                      side: BorderSide(color: Colors.blue),
                     ),
                     padding: EdgeInsets.symmetric(vertical: 50, horizontal: 100),
                     onPressed: () {
@@ -75,7 +78,7 @@ class _JoinLobbyState extends State<JoinLobby> {
                       //Navigator.pushNamed(context, "/lobby");
                     },
                     elevation: 20,
-                    color: Colors.blueGrey[300],
+                    color: Colors.blue[300],
                     child: Expanded(
                       flex: 20,
                       child: Text(
