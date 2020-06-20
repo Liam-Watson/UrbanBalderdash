@@ -20,12 +20,13 @@ class cLobby extends State<CreateLobby> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.yellow,
+        iconTheme: IconThemeData(color: Colors.black),
       ),
       body: Center(
         child: Container(
           padding: EdgeInsets.all(50),
-          color: Colors.blueGrey,
+          color: Colors.yellow,
           child: Column(
             children: <Widget>[
               Container(
@@ -69,7 +70,7 @@ class cLobby extends State<CreateLobby> {
                   clipBehavior: Clip.antiAlias,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(70.0),
-                    side: BorderSide(color: Colors.blueGrey),
+                    side: BorderSide(color: Colors.grey[700]),
                   ),
                   padding: EdgeInsets.symmetric(vertical: 50, horizontal: 100),
                   onPressed: () {
@@ -79,7 +80,7 @@ class cLobby extends State<CreateLobby> {
                             builder: (__) => new Lobby(LobbyInfo(lName.text))));
                   },
                   elevation: 20,
-                  color: Colors.blueGrey[300],
+                  color: Colors.blue,
                   child: Expanded(
                     flex: 20,
                     child: Text(
